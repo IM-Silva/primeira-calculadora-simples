@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+body {
+    height: 100vh;
+    background: #191d1d;
+}
+
+
+h1 {
+    color: #53ff1a;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+
+.calculadora {
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #4e4e32;
+    color: #53ff1a;
+    border: none;
+    font-size: 25px;
+}
+
+.button:hover{
+    background-color: rgb(36, 36, 36);
+}
+
+#resultado{
+    width: 200px;
+    background-color: #eeffe6;
+    height: 65px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right ;
+    border: none;
+    border-radius: 4px;
+}
+
+footer{
+    background-color: black;
+    color: #53ff1a;
+    position: relative;
+    top: 35.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:520px) {
+    img{
+        display: none;
+    }
+    footer{
+        top: 36.5rem;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:321px){
+    h1{
+        font-size:22px ;
+    }
+    footer{
+        font-size: 12px;
+        top:37rem ;
+    }
+}
